@@ -1,7 +1,18 @@
+:root {
+  --header-text-color: #ffffff;
+  --btn-color: #ffffff;
+  --title-color: #212121;
+  --text-color: #212121;
+  --accent-color: #2196f3;
+  --header-link-color: #757575;
+  --title-back-color: #2f303a;
+  --team-background-color: #f5f4fa;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--header-text-color);
+  color: var(--text-color);
 }
 
 .list {
@@ -29,15 +40,20 @@ a {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* header */
+
+.header-logo {
+  color: #212121;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .header-list .header-link {
@@ -45,7 +61,7 @@ a {
 }
 .header-link:hover,
 .header-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .header-link-adress {
@@ -53,11 +69,15 @@ a {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--header-link-color);
+}
+.header-link-adress:hover,
+.header-link-adress:focus {
+  color: var(--accent-color);
 }
 /* title */
 .title {
-  background-color: #2f303a;
+  background-color: var(--title-back-color);
 }
 
 .title-h1 {
@@ -67,7 +87,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--header-text-color);
 }
 
 .main-btn {
@@ -78,8 +98,8 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--header-text-color);
 }
 
 /* about */
@@ -90,7 +110,7 @@ a {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .about-p {
@@ -98,12 +118,9 @@ a {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--header-link-color);
 }
 /* work */
-.work {
-  background-color: #e5e5e5;
-}
 
 .work-title {
   font-weight: bold;
@@ -111,7 +128,7 @@ a {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 /* team */
@@ -122,18 +139,18 @@ a {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-background-color);
 }
 .team-item-name {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .team-item-positon {
@@ -141,11 +158,19 @@ a {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--header-link-color);
 }
 /* footer */
+.footer-logo {
+  color: var(--header-text-color);
+}
+
 .foot {
   background-color: #2f303a;
+}
+
+.footer-adress {
+  font-style: normal;
 }
 
 .logo-foot {
@@ -154,7 +179,7 @@ a {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .adress-city {
@@ -162,7 +187,7 @@ a {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--header-text-color);
 }
 
 .adress-contact {
@@ -172,19 +197,33 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.adress-contact:hover,
+.adress-contact:focus {
+  color: var(--accent-color);
+}
 
 /* portfolio */
 .h1-btn {
   background-color: #f5f4fa;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .h1-btn:hover,
 .h1-btn:focus {
   background-color: #2196f3;
-  color: #ffffff;
+  color: var(--header-text-color);
 }
 
-.services-list-link {
-  color: #212121;
+.service-list-choice {
+  font-size: 18px;
+  line-height: 2;
+  vertical-align: top;
+  color: var(--text-color);
+}
+
+.sepvice-p {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  vertical-align: top;
+  color: var(--header-link-color);
 }
