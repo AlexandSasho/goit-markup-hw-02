@@ -22,6 +22,11 @@ body {
 a {
   text-decoration: none;
 }
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #2196f3;
+}
 
 .visually-hidden {
   position: absolute;
@@ -76,6 +81,7 @@ a {
   color: var(--accent-color);
 }
 /* title */
+
 .title {
   background-color: var(--title-back-color);
 }
@@ -100,6 +106,10 @@ a {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--header-text-color);
+}
+.main-btn:hover,
+.main-btn:focus {
+  background-color: #188ce8;
 }
 
 /* about */
@@ -204,6 +214,8 @@ a {
 
 /* portfolio */
 .h1-btn {
+  font-size: 16px;
+  line-height: calc(26 / 16);
   background-color: #f5f4fa;
   color: var(--text-color);
 }
