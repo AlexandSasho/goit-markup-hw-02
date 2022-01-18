@@ -224,6 +224,7 @@ s .visually-hidden {
   line-height: calc(26 / 16);
   background-color: #f5f4fa;
   font-family: inherit;
+  font-weight: 500;
   color: var(--text-color);
 }
 
